@@ -16,12 +16,17 @@ def main():
 	initialTime = time.time()
 
 	#60 second typing test
-	while ((time.time() - initialTime) < 60):
+
 		
-		for word in words[:10]:
-			print word,
+	for word in words[:10]:
+		print word,
+		READ IN INPUT
+		STORE INPUT WORDS IN ARRAY
 
+		os.system('clear')
 
+		if (time.time() - initialTime) < 60))	
+			break
 
 	
 
