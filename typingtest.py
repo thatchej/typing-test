@@ -10,15 +10,18 @@ def main():
 	text_source = open('google-10000-english.txt', 'r+');
 	words = []
 	lines = text_source.readlines()
+	for x in range(1, 300):
+		words.append(random.choice(lines).replace('\n', ''))
 
 	initialTime = time.time()
 
 	#60 second typing test
 	while ((time.time() - initialTime) < 60):
 		
-		#for x in range (0, 10):
-		#	print(random.choice(lines).replace('\n', '')),
-		#print "\n\n"
+		for word in words[:10]:
+			print word,
+
+
 
 	
 
