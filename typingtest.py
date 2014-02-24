@@ -1,16 +1,26 @@
 import time
 import sys
-
+import random
+import os
 
 def main():
 
-print "TYPING TEST - ALICE IN WONDERLAND"
+	os.system('clear') #clears the UNIX terminal for the ultimate typing experience
 
-initialTime = time.clock()
+	text_source = open('google-10000-english.txt', 'r+');
+	words = []
+	lines = text_source.readlines()
 
-while (time.clock() - initialTime < 60)
+	initialTime = time.time()
+
+	#60 second typing test
+	while ((time.time() - initialTime) < 60):
+		
+		#for x in range (0, 10):
+		#	print(random.choice(lines).replace('\n', '')),
+		#print "\n\n"
+
 	
-
 
 if __name__ == '__main__':
 	main()
